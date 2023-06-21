@@ -60,6 +60,14 @@ $(".cart-bt").mouseout(function(event){
     var b = "#" + event.target.id;
     $(b).removeClass("shade1");
 });
+$(".bookImg").mouseover(function(event){
+    var b = "#" + event.target.id;
+    $(b).addClass("image-border");
+});
+$(".bookImg").mouseout(function(event){
+    var b = "#" + event.target.id;
+    $(b).removeClass("image-border");
+});
 var r = Math.floor(Math.random()*20+1);
 var rani = "images/all-books/"+r+".jpg";
 $(".randomImg").attr("src",rani);
